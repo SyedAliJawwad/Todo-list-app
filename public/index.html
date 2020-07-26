@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="wrapper">
+        <h1>Todo List</h1>
+        <h4>by Syed Ali Jawwad</h4>
+        <hr>
+    </header>
+    <form>
+        <input type="text" name="todo-input" class="todo-input anim">
+        <button class="todo-button anim" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+
+        <div class="dropdown-container">
+            <select name="todos" class="filter-todo anim">
+                <option value="All">All</option>
+                <option value="Completed">Completed</option>
+                <option value="Incompleted">Incompleted</option>
+            </select>
+        </div>
+    </form>
+
+    
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="app.js"></script>
+
+</html>
